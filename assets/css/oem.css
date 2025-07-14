@@ -1,0 +1,228 @@
+/* ------------------------------------------
+  oem.html
+------------------------------------------ */
+.oem_slider {
+  max-width: 1400px;
+  margin: 60px auto 0;
+}
+
+.sub_main_template_inner_links .blue {
+  background-color: #25AAE1;
+}
+.sub_main_top {
+  margin: 105px auto 170px;
+}
+
+/* ------------------------------------------
+  oem_slider
+------------------------------------------ */
+.slick-dotted.slick-slider {
+  margin: 0;
+}
+
+.slick-dots {
+  bottom: -45px;
+}
+
+.slick-dots li {
+  cursor: pointer;
+  display: inline-block;
+  height: 15px;
+  margin: 0 7px;
+  padding: 0;
+  position: relative;
+  width: 15px;
+}
+
+
+.slick-dots li button {
+  border: 0;
+  border: 1px #333 solid;
+  border-radius: 50%;
+  color: #333;
+  height: 15px;
+  margin: 0;
+  padding: 0;
+  width: 15px;
+}
+
+.slick-dots li.slick-active button {
+  background: #333;
+}
+
+.slick-dots li button:before {
+  content: none;
+}
+
+@media screen and (max-width: 767px) {
+  .slick-dots {
+    bottom: -40px !important;
+  }
+}
+
+/* ------------------------------------------
+  oem_list oem_catalog
+------------------------------------------ */
+.oem_sec_title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  border: 1px solid #ACACAC;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.oem_sec_title_small {
+  font-size: 1.6rem;
+  font-weight: normal;
+  padding-left: 30px;
+}
+
+.oem_catalog_item_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.oem_catalog_item {
+  width: calc((100% - 120px) / 4);
+  margin: 40px 0 0 40px;
+}
+
+.oem_catalog_item:first-child {
+  margin-left: 0;
+}
+
+.oem_catalog_item:nth-child(5n) {
+  margin-left: 0;
+}
+
+.oem_catalog_item_img {
+  border: 1px solid #707070;
+}
+
+.oem_catalog_item_title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.oem_catalog_newitem_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.oem_catalog_newitem {
+  width: calc((100% - 70px) / 3);
+  margin: 55px 0 0 35px;
+}
+
+.oem_catalog_newitem:first-child {
+  margin-left: 0;
+}
+
+.oem_catalog_newitem:nth-child(4n) {
+  margin-left: 0;
+}
+
+/* ------------------------------------------
+  oem_list oem_category
+------------------------------------------ */
+.oem_category_item_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  margin-top: 20px;
+}
+
+.oem_category_item {
+  width: calc((100% - 60px) / 2);
+  margin-top: 20px;
+  background-color: #E6E7E8;
+  padding: 25px 20px;
+}
+
+.oem_category_item_title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.oem_category_item_img {
+  margin-top: 20px;
+}
+
+.oem_category_item_link_wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.oem_category_item_link_pdf, .oem_category_item_link_est {
+  display: block;
+  width: calc((100% - 10px) / 2);
+  color: #fff;
+  background-color: #25AAE1;
+  padding: 11px 0 14px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.oem_category_item_video_ref {
+  margin-top: 25px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.oem_category_item_video_link_wrapper {
+  margin-top: 10px;
+}
+
+.oem_category_item_video_link {
+  margin-top: 15px;
+  display: block;
+  color: #fff;
+  background-color: #25AAE1;
+  padding: 11px 0 14px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.oem_category_item_video_link:first-child {
+  margin-top: 0;
+}
+
+.pharmaceutical_info {
+  width: 65%;
+  margin: 115px auto 145px;
+  display: block;
+  color: #fff;
+  background-color: #25AAE1;
+  padding: 11px 0 14px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .oem_sec_title {
+    font-size: 1.8rem;
+    padding: 10px;
+    margin-top: 40px;
+  }
+
+  .oem_sec_title_small {
+    font-size: 1.2rem;
+    font-weight: normal;
+    padding-left: 0;
+    display: block;
+  }
+
+  .oem_catalog_item {
+    width: calc((100% - 10px) / 2);
+    margin: 40px 0 0 40px;
+  }
+
+  .oem_category_item{
+    flex:100vw;
+  }
+}

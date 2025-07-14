@@ -1,0 +1,442 @@
+/* contact_pages_nav */
+.contact_pages_nav {
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+.contact_pages_nav button {
+  align-self: center;
+  color: #fff;
+  flex: 1;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 80px;
+  text-align: center;
+}
+.contact_pages_nav button a {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+}
+.contact_pages_nav button:nth-child(1) {
+  background-color: #c9252c;
+}
+.contact_pages_nav button:nth-child(2) {
+  background-color: #00ace7;
+}
+.contact_pages_nav button:nth-child(3) {
+  background-color: #7D4099;
+  font-size: 1.6rem;
+}
+
+/* contact_table */
+.contact_table_title {
+  background-color: #e6e7e8;
+  display: block;
+  font-size: 2.7rem;
+  font-weight: 700;
+  height: 60px;
+  margin-bottom: 30px; /* + contact table's border seperate 20px = 50px */
+  padding-top: 5px;
+  text-align: center;
+}
+.contact_table {
+  border-collapse: separate;
+  border-spacing: 0 20px;
+  margin-bottom: 40px; /* + contact table's border seperate 20px = 60px */
+  table-layout: auto;
+  text-align: center;
+  width: 100%;
+}
+.contact_table th {
+  border: 1px solid #9e9e9e;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 20px;
+  vertical-align: middle;
+  width: 40%;
+}
+.contact_table td {
+  border: 1px solid #9e9e9e;
+  border-left: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 20px;
+  text-align: left;
+}
+.contact_table td button {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 20px 0;
+  min-height: 50px;
+}
+.contact_table td button a {
+  display: block;
+  text-decoration: none;
+}
+.contact_table tr:first-child td button {
+  background-color: #ff4a01;
+}
+.contact_table tr:nth-child(2) td button {
+  background-color: #3769b9;
+}
+.contact_table_az_center h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.contact_table_az_center p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.contact_table_notification {
+  background-color: #e6e7e8;
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 17px;
+  margin-top: 14px;
+  padding: 20px;
+}
+.contact_table_download_title {
+  font-weight: 700;
+}
+.contact_table_download_files {
+  text-decoration: underline;
+}
+.contact_table_customer_service {
+  margin-top: 17px;
+}
+.contact_table_customer_service h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.contact_table_customer_service p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+/* form_table */
+.form_table_bg_container {
+  background-color: #f5f5f5;
+  padding-bottom: 200px;
+  padding-top: 70px;
+}
+.form_table_title {
+  background-color: #c9252c;
+  color: #fff;
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  height: 60px;
+  padding-top: 5px;
+  text-align: center;
+}
+.form_table_description {
+  display: block;
+  margin-bottom: 30px; /* + form table's padding 20px = 50px */
+  margin-top: 40px;
+  padding: 0 100px;
+}
+.form_table_description p {
+  font-size: 1.6rem;
+}
+.form_table_description p + p {
+  margin-top: 20px;
+}
+.form_table_description a {
+  text-decoration: underline;
+}
+.form_table {
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  table-layout: auto;
+  text-align: left;
+  width: 100%;
+}
+.form_table th {
+  border-bottom: solid 1px #a4a4a4;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 26px;
+  position: relative;
+  vertical-align: top;
+  width: 35%;
+}
+.form_table td {
+  border-bottom: solid 1px #a4a4a4;
+  padding-right: unset;
+  width: 65%;
+}
+.form_table td input {
+  background-color: #fff;
+  border: solid 1px #898989;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  height: 50px;
+  padding-left: 20px;
+}
+.form_table td select {
+  background-color: #fff;
+  border: solid 1px #898989;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  height: 50px;
+  padding-left: 20px;
+  width: 50%;
+}
+.form_table td textarea {
+  background-color: #fff;
+  border: solid 1px #898989;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  height: 200px;
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+}
+
+/* form */
+.form_tag::before {
+  background-color: #4d4d4f;
+  color: #fff;
+  content: '必須';
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 4px 0;
+  position: absolute;
+  right: 20px;
+  text-align: center;
+  top: 30px;
+  width: 56px;
+}
+.form_hidden_tag::before {
+  background-color: #4d4d4f;
+  color: #fff;
+  content: '必須';
+  font-size: 1.4rem;
+  font-weight: 400;
+  opacity: 0;
+  padding: 4px 0;
+  position: absolute;
+  right: 20px;
+  text-align: center;
+  top: 30px;
+  width: 56px;
+}
+.form_name {
+  display: flex;
+  gap: 10px;
+  padding: 20px 0;
+}
+.form_name .wpcf7-form-control-wrap {
+  width: calc(50% - 5px);
+}
+.form_name input {
+  width: 100%;
+}
+.form_email {
+  display: flex;
+  padding: 20px 0;
+}
+.form_email input {
+  flex: 100%;
+}
+.form_organization {
+  display: flex;
+  padding: 20px 0;
+}
+.form_organization input {
+  flex: 100%;
+}
+.form_phone {
+  display: block;
+  padding: 20px 0;
+}
+.form_phone input {
+  width: 50%;
+}
+.form_phone p {
+  font-size: 1.4rem;
+  margin-top: 12px;
+}
+.form_postal_code {
+  padding: 20px 0;
+}
+.form_postal_code input {
+  width: 50%;
+}
+.form_address {
+  display: block;
+  padding: 20px 0;
+}
+.form_address p {
+  font-size: 1.4rem;
+  margin-top: 12px;
+}
+.form_address input {
+  width: 100%;
+}
+.form_prefecture, .form_city, .form_category {
+  padding: 20px 0;
+}
+.form_submit input {
+  background-color: #c9252c;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 auto;
+  min-height: 80px;
+  padding: unset;
+  transition: .3s;
+  width: 330px;
+}
+.form_submit input:hover {
+  opacity: .7;
+}
+
+/* mobile view */
+@media screen and (max-width:767px) {
+  /* contact_pages_nav */
+  .contact_pages_nav {
+    flex-direction: column;
+  }
+  .contact_pages_nav button {
+    font-size: 1.6rem;
+    min-height: 50px;
+    width: 100%;
+  }
+  .contact_pages_nav button:nth-child(3) {
+    font-size: 1.4rem;
+  }
+
+  /* contact_table */
+  .contact_table_title {
+    font-size: 2rem;
+    padding: 13px;
+  }
+  .contact_table th {
+    border-bottom: unset;
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: center;
+    width: 100%;
+  }
+  .contact_table td {
+    align-items: center;
+    border-left: solid 1px #9e9e9e;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    justify-content: center;
+    text-align: left;
+  }
+  .contact_table td button {
+    font-size: 1.4rem;
+  }
+  .contact_table tr:nth-child(1) td button {
+    width: 100%;
+  }
+  .contact_table tr:nth-child(2) td button {
+    width: 100%;
+  }
+  .contact_table_az_center h3 {
+    font-size: 1.4rem;
+  }
+  .contact_table_customer_service h3 {
+    font-size: 1.4rem;
+  }
+
+  /* form_table */
+  .form_table_title {
+    font-size: 2rem;
+    padding: 13px;
+  }
+  .form_table_description {
+    padding: 0;
+  }
+  .form_table {
+    border-collapse: collapse;
+  }
+  .form_table th {
+    border: unset;
+    display: flex;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    width: 100%;
+  }
+  .form_table td {
+    border: unset;
+    border-top: 1px solid #a4a4a4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .form_table td input, .form_table td select {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+  }
+  .form_table td textarea {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .form_table tr:last-child td {
+    border-bottom: 1px solid #a4a4a4;
+  }
+
+  /* form */
+  .form_tag::before {
+    font-size: 1.2rem;
+    right: 0;
+    top: unset;
+  }
+  .form_hidden_tag::before {
+    font-size: 1.2rem;
+    right: 0;
+    top: unset;
+  }
+  .form_name {
+    display: block;
+    padding: 0;
+    /* padding-bottom: 20px; */
+  }
+  .form_name .wpcf7-form-control-wrap {
+    width: 100%;
+  }
+  .form_email, .form_phone, .form_organization, .form_postal_code, .form_prefecture, .form_city, .form_address, .form_category {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .form_submit {
+    display: flex;
+  }
+}
+
+.wpcf7-form-control-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+
+table .wpcf7-not-valid-tip {
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.container .wpcf7 form .wpcf7-response-output {
+  font-size: 1.4rem;
+}

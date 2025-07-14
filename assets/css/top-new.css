@@ -1,0 +1,665 @@
+.u-brSP {
+    display: none;
+}
+
+.titleSans {
+    width: fit-content;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    background: #C9252C;
+    padding: 0px 32px 0px 16px;
+    color: white;
+}
+
+.topPageSec {
+    padding: 56px 0 0 0;
+}
+
+.topPageLandSec {
+    margin: 0 0 64px;
+}
+
+.topPageLandSec__inner {
+    max-width: 1040px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0 40px;
+}
+
+.topPageLandSec__sliderContent {
+    width: 480px;
+    overflow: hidden;
+    position: relative;
+}
+
+.topPageLandSec__listLinks {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+}
+
+.topPageLandSec__itemProduct {
+    display: block;
+    border-radius: 10px;
+    background: url('../img/top-new/landing_img-01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    height: 156px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 24px;
+    position: relative;
+}
+
+.topPageLandSec__itemProduct::after {
+    content: '';
+    width: 379px;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(229, 242, 250, 0) 0%, #E5F2FA 60%);
+    position: absolute;
+    top: 0;right: 0;
+}
+
+.topPageLandSec__productTitle {
+    font-size: 22px;
+    font-weight: 600;
+    z-index: 1;
+    margin: 0;
+    color: #4D4D4F;
+    position: relative;
+}
+
+.topPageLandSec__productMore {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: #332A2A;
+}
+
+.topPageLandSec__productMore::before {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6.858' height='13.032' viewBox='0 0 6.858 13.032'%3E%3Cpath id='Path_1932' data-name='Path 1932' d='M14.691,13.042l6-6.167-6-6.167' transform='translate(-14.332 -0.358)' fill='none' stroke='%23332a2a' stroke-linejoin='round' stroke-miterlimit='8' stroke-width='1'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    width: 7px;
+    height: 12.33px;
+    margin: 0 7px 0 0;
+    position: relative;
+}
+
+.topPageLandSec__productImg {
+    width: 280px;
+    height: 236px;
+    z-index: 1;
+    position: absolute;
+    right: -44px;top: -23px;
+}
+
+/* 
+.topPageLandSec__itemOEM {
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    background: url('../img/top-new/landing_img-04.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.topPageLandSec__parentOEM {
+    display: grid;
+    //grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+
+.topPageLandSec__oemImg {
+    width: 100%;
+}
+
+.topPageLandSec__noteImg {
+    width: 100%;
+}
+
+.topPageLandSec__slideItem {
+    width: 100%;
+    height: 368px !important;
+}
+
+.topPageLandSec__slideImg {
+    width: 100%;
+    height: 348px !important;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.topPageLandSec__pagination {
+    display: flex;
+    gap: 0 8px;
+    position: absolute;
+    bottom: 0px !important;
+}
+
+.topPageLandSec__pagination > .swiper-pagination-bullet {
+    width: 50% !important;
+    height: 4px;
+    background: #2d2d2e92;
+    border-radius: 0 !important;
+    margin: 0 !important;
+}
+
+.topPageLandSec__pagination > .swiper-pagination-bullet-active {
+    background: #C9252C;
+}
+
+.topPageAboutSec {
+    margin: 0 0 72px;
+}
+
+.topPageAboutSec__contentPC {
+    min-height: 519px;
+    position: relative;
+}
+
+.topPageAboutSec__contentText {
+    width: 46.7%;
+    display: flex;
+    justify-content: end;
+    min-height: 519px;
+    position: relative;
+}
+
+.topPageAboutSec__contentParent {
+    width: 454px;
+    color: white;
+    padding: 0 64px 0 0;
+}
+
+.topPageAboutSec__bg01 {
+    background: url('../img/top-new/about_img-01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+
+.topPageAboutSec__bg02 {
+    width: 100%;
+    height: 100%;
+    background: url('../img/top-new/about_img-02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: -2;
+    position: absolute;
+    top: 0;left: 0;
+}
+
+
+.topPageAboutSec__title {
+    margin: 0 0 80px;
+}
+
+.topPageAboutSec__description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.76;
+    margin: 0 0 64px;
+}
+
+.topPageAboutSec__btn {
+    width: fit-content;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 11px 20px 13px 24px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 12px;
+    background: #332A2A;
+    position: relative;
+}
+
+.topPageAboutSec__btn::after {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8.858' height='17.144' viewBox='0 0 8.858 17.144'%3E%3Cpath id='Path_1969' data-name='Path 1969' d='M14.691,17.153l8-8.223-8-8.223' transform='translate(-14.332 -0.358)' fill='none' stroke='%23c9252c' stroke-linejoin='round' stroke-miterlimit='8' stroke-width='1'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+}
+
+.topPageNewsSec {
+    margin: 0 0 96px;
+}
+
+.topPageNewsSec__inner {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.topPageNewsSec__content {
+    width: 100%;
+    min-height: 523px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 16%);
+}
+
+.topPageNewsSec__title {
+    margin: 0 0 64px;
+}
+
+.topPageNewsSec__contentTexts {
+    padding: 0 18px 0 20px;
+}
+
+.topPageNewsSec__titleCon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4D4D4F;
+    margin: 0 0 40px;
+}
+
+.topPageNewsSec__icon {
+    width: 32px;
+    height: 32px;
+}
+
+.topPageAboutSec__lists {
+    width: 100%;
+    height: 230px;
+    overflow: auto;
+    margin: 0 0 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+}
+
+.topPageAboutSec__items {
+    padding: 0 0 16px;
+    border-bottom: 1px solid #4D4D4F;
+    display: block;
+}
+
+.topPageAboutSec__itemTitle {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 4px;
+    line-height: 1.5;
+}
+
+.topPageAboutSec__itemDescription {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.topPageAboutSec__titleLists {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.38;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topPageAboutSec__titleLists::before {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9.717' height='17.841' viewBox='0 0 9.717 17.841'%3E%3Cpath id='Path_1932' data-name='Path 1932' d='M14.691,17.153l8-8.223-8-8.223' transform='translate(-13.974 -0.01)' fill='none' stroke='%23332a2a' stroke-linejoin='round' stroke-miterlimit='8' stroke-width='2'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 19px;
+}
+
+.topPageAboutSec__pdfText {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    display: block;
+}
+
+.topPageOverviewSec__inner {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 20px;
+}
+
+.topPageOverviewSec__content {
+    width: 100%;
+    min-height: 656px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 16%);
+    background: url('../img/top-new/news_img-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.topPageOverviewSec__title {
+    margin: 0 0 48px;
+}
+
+.topPageOverviewSec__contentTexts {
+    width: 312px;
+    padding: 0 0 24px 24px;
+}
+
+.topPageOverviewSec__titleCon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4D4D4F;
+    margin: 0 0 32px;
+}
+
+.topPageOverviewSec__icon {
+    width: 32px;
+    height: 32px;
+}
+
+.topPageOverviewSec__locLists {
+    display: flex;
+    flex-direction: column;
+    gap: 18px 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.25;
+    margin: 0 0 47px 0;
+    min-height: 381px;
+}
+
+.topPageOverviewSec__localListsTtl{
+    font-size: 18px;
+    font-weight: bold;
+}
+.topPageOverviewSec__localListsSubTtl{
+    font-size: 18px;
+    font-weight: bold; 
+    color:#C9252C
+}
+
+.topPageOverviewSec__localListsText{
+    font-size: 18px;
+    font-weight: bold; 
+    color:#C9252C
+}
+
+.mgnPadd {
+    line-height: 1.5 !important;
+}
+
+.topPageOverviewSec__locTitle {
+    font-weight: 500 !important;
+    margin: 0 0 2px;
+}
+
+
+.topPageOverviewSec__titleLists {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.38;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.topPageOverviewSec__titleLists::before {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9.717' height='17.841' viewBox='0 0 9.717 17.841'%3E%3Cpath id='Path_1932' data-name='Path 1932' d='M14.691,17.153l8-8.223-8-8.223' transform='translate(-13.974 -0.01)' fill='none' stroke='%23332a2a' stroke-linejoin='round' stroke-miterlimit='8' stroke-width='2'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 19px;
+}
+
+.topPageOverviewSec__img {
+    width: 148px;
+    position: absolute;
+    top: 0;right: 0;
+}
+
+
+@media screen and (max-width: 490px) {
+    .topPageAboutSec__contentParent {
+        width: 100%;
+        padding: 0 64px 0 20px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .topPageAboutSec__contentParent {
+        width: 100%;
+        padding: 0 64px 0 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .topPageLandSec__parentOEM {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 16px;
+    }
+    
+    .u-brSP {
+        display: block;
+    }
+
+    .titleSans {
+        font-size: 16px;
+        padding: 3px 34px 0px 16px;
+    }
+
+    .topPageSec {
+        padding: 20px 0 0 0;
+    }
+
+    .topPageLandSec__inner {
+        max-width: 100%;
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .topPageLandSec__sliderContent {
+        width: 100%;
+        aspect-ratio: 314 / 237;
+    }
+
+    .topPageLandSec__listLinks {
+        width: 100%;
+        gap: 16px 0;
+    }
+
+    .topPageLandSec__slideItem {
+        /* height: 253px !important; */
+    }
+
+    .topPageLandSec__slideImg {
+        /* height: 237px !important; */
+        width: 100%;
+        height: auto !important;
+        object-fit: contain;
+    }
+
+    .topPageLandSec__itemProduct {
+        display: block;
+        border-radius: 10px;
+        padding: 24px 16px;
+    }
+
+    .topPageLandSec__itemProduct::after {
+        width: 247px;
+    }
+
+    .topPageLandSec__productImg {
+        width: 171px;
+        height: 202px;
+        position: absolute;
+        right: -9px;top: -4px;
+    }
+
+    .topPageLandSec__productTitle {
+        font-size: 20px;
+    }
+
+    .topPageAboutSec {
+        margin: 0 0 64px;
+    }
+
+    .topPageAboutSec__contentPC {
+        min-height: fit-content;
+    }
+
+    .topPageAboutSec__contentText {
+        width: 100%;
+        display: block;
+        min-height: fit-content;
+        position: relative;
+    }
+
+    .topPageAboutSec__bg02 {
+        width: 100%;
+        height: 216px;
+        background: url('../img/top-new/about_img-02-sp.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .topPageAboutSec__contentParent {
+        width: 100%;
+        padding: 0 24px 40px 24px;
+    }
+
+    .topPageAboutSec__title {
+        margin: 0 0 32px;
+    }
+
+    .topPageAboutSec__description {
+        margin: 0 0 40px;
+    }
+
+    .topPageAboutSec__btnCon {
+        padding: 0 13px;
+    }
+
+    .topPageAboutSec__btn {
+        width: 100%;
+        padding: 6px 20px 6px 24px;
+        border-radius: 39px;
+        text-align: center;
+        gap: 0 11px;
+    }
+
+    .topPageNewsSec {
+        margin: 0 0 64px;
+    }
+
+    .topPageNewsSec__inner {
+        padding: 0 24px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .topPageNewsSec__content {
+        min-height: 430px;
+        padding: 0 0 18px;
+    }
+
+    .topPageNewsSec__search {
+        min-height: 250px !important;
+    }
+
+    .topPageNewsSec__searchList {
+        height: 100% !important;
+    }
+
+    .topPageNewsSec__title {
+        margin: 0 0 32px;
+    }
+
+    .topPageNewsSec__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .topPageNewsSec__titleCon {
+        gap: 12px;
+        font-size: 22px;
+        margin: 0 0 20px;
+    }
+
+    .topPageAboutSec__padd {
+        padding-right: 58px;
+        line-height: 1.5;
+    }
+
+    .topPageOverviewSec__inner {
+        padding: 0 24px;
+        gap: 20px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .topPageOverviewSec__contentTexts {
+        width: 100%;
+        padding: 0 20px 29px 20px;
+    }
+
+    .topPageOverviewSec__title {
+        margin: 0 0 182px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .topPageOverviewSec__img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        position: absolute;
+        top: 0;right: 0;
+    }
+
+    .topPageOverviewSec__locLists {
+        gap: 21px 0;
+        margin: 0 0 44px;
+        min-height: 100%;
+    }
+
+    .topPageOverviewSec__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .topPageOverviewSec__titleLists {
+        font-size: 16px;
+    }
+    .topPageOverviewSec__titleCon {
+        gap: 12px;
+        font-size: 22px;
+        margin: 0 0 20px;
+    }
+}

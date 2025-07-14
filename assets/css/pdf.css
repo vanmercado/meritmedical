@@ -1,0 +1,260 @@
+/* ------------------------------------------
+  pdf.html
+------------------------------------------ */
+.sub_main {
+  padding: 0;
+}
+
+.sub_main_search_title {
+  background-color: #6ac17b;
+}
+
+.sub_main_search_checks_item {
+  margin-top: 45px;
+}
+
+.sub_main_search_checks_item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.pdf_main_search_checks_main_item {
+  margin-top: 10px;
+  width: 50%;
+}
+
+.pdf_main_search_checks_main_item label {
+  color: #000;
+  cursor: pointer;
+  display: table;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 26px;
+  padding-left: 36px;
+  position: relative;
+  text-align: left;
+}
+
+.pdf_main_search_checks_main_item label::before {
+  background-color: #fff;
+  border: 1px #000 solid;
+  content: '';
+  height: 26px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 26px;
+}
+
+.pdf_main_search_checks_main_item label::before {
+  background-color: #fff;
+  border: 1px #000 solid;
+  content: '';
+  height: 26px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 26px;
+}
+
+.pdf_main_search_checks_main_item input[type=checkbox]:checked ~ label::after {
+  background-image: url(../img/sub/check_icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  height: 11px;
+  left: 5px;
+  position: absolute;
+  top: 10px;
+  width: 17px;
+}
+
+.sub_main_search {
+  padding-bottom: 160px;
+}
+
+.sub_main_search_keyword_search dd button {
+  background: #6ac17b;
+}
+
+@media screen and (max-width: 767px) {
+  .sub_main_search {
+    margin-top: 0;
+    padding: 30px 0 60px;
+  }
+
+  .sub_main_search_checks_item {
+    margin-top: 20px;
+  }
+
+  .pdf_main_search_checks_main_item {
+    margin-top: 7px;
+    width: 100%;
+  }
+
+  .pdf_main_search_checks_main_item label {
+    font-size: 1.4rem;
+    line-height: 20px;
+    padding-left: 30px;
+  }
+
+  .pdf_main_search_checks_main_item label::before {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+/* ------------------------------------------
+  pdf_search_result.html
+------------------------------------------ */
+.pdf_title {
+  border-left: 10px solid #898989;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 61px;
+  margin-top: 60px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+.search_word {
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+.pdf_item_wrapper {
+  margin-top: 40px;
+}
+
+.pdf_item {
+  margin-top: 20px;
+}
+
+.pdf_item:first-child {
+  margin-top: 0;
+}
+
+.pdf_item_content {
+  border: 1px solid #898989;
+  padding: 20px 20px 16px;
+}
+
+.pdf_item_content_title_wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pdf_item_content_title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.pdf_item_content_link_wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pdf_item_content_link {
+  background-color: #6ac17b;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  text-align: center;
+  width: calc((100% - 20px) / 2);
+}
+
+.pdf_item_content_link.dl {
+  margin-left: auto;
+}
+
+.pagination {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.pagination_item {
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+
+.pagination_item:last-child {
+  margin-right: 0;
+}
+
+.pagination_item a, .pagination_item span {
+  display: block;
+  width: 100%;
+}
+
+.pagination_item span {
+  border: 1px solid #000;
+  height: 30px;
+  width: 30px;
+}
+
+.pagination_item .current {
+  background-color: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .pdf_title {
+    border-left: 4px solid #c9252c;
+    font-size: 1.8rem;
+    line-height: inherit;
+    margin-top: 40px;
+    padding-left: 10px;
+  }
+
+  .search_word {
+    font-size: 1.4rem;
+    margin-top: 10px;
+  }
+
+  .pdf_item_wrapper {
+    margin-top: 20px;
+  }
+
+  .pdf_item_content_title_wrapper {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .pdf_item_content_title {
+    font-size: 1.6rem;
+  }
+
+  .pdf_item_content_link_wrapper {
+    margin-top: 10px;
+  }
+
+  .pdf_item_content_link {
+    font-size: 1.4rem;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    width: calc((100% - 10px) / 2);
+  }
+
+  .pdf_item_title {
+    font-size: 1.4rem;
+    margin-top: 5px;
+  }
+
+  .pagination {
+    margin: 20px auto 60px;
+  }
+}

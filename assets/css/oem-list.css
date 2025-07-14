@@ -1,0 +1,16 @@
+.sub_main.oem .sub_main_content {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width:767px){
+    /* 
+    catalog item + new item
+     */
+    .oem_catalog_item , .oem_catalog_newitem{
+        margin-left: 0px;
+        flex: 0 1 50%;
+        padding: 10px;
+    }
+    
+}

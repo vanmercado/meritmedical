@@ -1,0 +1,422 @@
+/* ------------------------------------------
+  registration form
+------------------------------------------ */
+
+.u-pcDb {
+    display: block;
+}
+
+.u-spDb {
+    display: none;
+}
+
+.step {
+    margin: 60px auto 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    gap: 4px;
+}
+
+.step__item {
+    position: relative;
+    width: 326px;
+    height: 48px;
+    background: #E6E7E8;
+    color: #4D4D4F;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.step__item:nth-of-type(n+2) {
+    background: transparent;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="326" height="48" viewBox="0 0 326 48"><path id="Subtraction_2" data-name="Subtraction 2" d="M-7775,48h-326l16-24-16-24h326V48Z" transform="translate(8101)" fill="%23e6e7e8"/></svg>');
+    background-size: 100% auto;
+}
+
+.step__item.active:nth-of-type(n+2) {
+    background: transparent;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="326" height="48" viewBox="0 0 326 48"><path id="Subtraction_2" data-name="Subtraction 2" d="M-7775,48h-326l16-24-16-24h326V48Z" transform="translate(8101)" fill="%2325AAE1"/></svg>');
+    background-size: 100% auto;
+}
+
+.step__item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    width: 16px;
+    height: 48px;
+    transform: translateY(-50%);
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="48" viewBox="0 0 16 48"><path id="Polygon_1" data-name="Polygon 1" d="M24,0,48,16H0Z" transform="translate(16) rotate(90)" fill="%23E6E7E8"/></svg>');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.step__item.active {
+    position: relative;
+    color: #fff;
+    background: #25AAE1;
+}
+
+.step__item.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    width: 16px;
+    height: 48px;
+    transform: translateY(-50%);
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="48" viewBox="0 0 16 48"><path id="Polygon_1" data-name="Polygon 1" d="M24,0,48,16H0Z" transform="translate(16) rotate(90)" fill="%2325aae1"/></svg>');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.registerForm__txt {
+    margin: 40px auto 0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+.registerForm__txtWarning {
+    margin: 16px auto 0;
+    color: #C9252C;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+.registerForm__txtDesc {
+    margin: 16px auto 0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.registerForm__content {
+    margin: 40px auto 0;
+    background: rgba(230,231,232, .3);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.registerForm__contentFlex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.registerForm__contentFlex:not(:first-child) {
+    margin-top: 32px;
+}
+
+.registerForm__contentHd {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 192px;
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.registerForm__contentHdReq {
+    padding: 0 8px;
+    background: #C9252C;
+    color: #fff;
+}
+
+.registerForm__contentInput {
+    width: calc(100% - 40px - 192px);
+}
+
+.registerForm__contentInput input {
+    border-radius: 5px;
+    background: #EAEAEA;
+    padding: 12px 16px;
+    line-height: 1.7;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+.registerForm__contentInput input::placeholder {
+    color: rgba(77,77,79, .4);
+}
+
+.registerForm__contentInputFlex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.registerForm__contentInputItem {
+    width: 200px;
+}
+
+.registerForm__contentInputItem.confirm {
+    width: auto;
+}
+
+.registerForm__contentInputItemData {
+    display: block;
+    padding: 12px 0;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.registerForm__contentInputTxt {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+    color: #332A2A;
+    line-height: 1.4;
+}
+
+.registerForm__contentFlexBtnFlex {
+    margin: 32px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.registerForm__contentFlexBtnFlex input,
+.registerForm__contentFlexBtnFlex button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 40px;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="8.858" height="17.144" viewBox="0 0 8.858 17.144"><g id="icon" transform="translate(-434.141 -1039.151)"><path id="arrow" d="M14.691,17.153l8-8.223-8-8.223" transform="translate(419.809 1038.793)" fill="none" stroke="%23fff" stroke-linejoin="round" stroke-miterlimit="8" stroke-width="1"/></g></svg>');
+    background-repeat: no-repeat;
+    background-size: 8px 16.45px;
+    background-position: center right 17.5px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.registerForm__contentFlexBtnFlex input:hover {
+    opacity: .7;
+}
+
+.registerForm__contentFlexBtnReset {
+    background: #332A2A;
+}
+
+.registerForm__contentFlexBtnSubmit {
+    background: #25AAE1;
+}
+
+.complete__header01 {
+    margin: 40px auto 0;
+    display: block;
+    color: #25AAE1;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.complete__txt {
+    margin: 12px auto 0;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.complete__block {
+    margin: 40px auto 0;
+    background: rgba(230,231,232, .3);
+    padding: 24px 0;
+}
+
+.complete__blockHd {
+    color: #25AAE1;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.complete__blockTxt {
+    margin: 12px auto 0;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.complete__btn {
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 40px;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background: #25AAE1;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="8.858" height="17.144" viewBox="0 0 8.858 17.144"><g id="icon" transform="translate(-434.141 -1039.151)"><path id="arrow" d="M14.691,17.153l8-8.223-8-8.223" transform="translate(419.809 1038.793)" fill="none" stroke="%23fff" stroke-linejoin="round" stroke-miterlimit="8" stroke-width="1"/></g></svg>');
+    background-repeat: no-repeat;
+    background-size: 8px 16.45px;
+    background-position: center right 17.5px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.registerForm__txtWarningConfirm {
+    margin: 40px auto 0;
+    display: block;
+    padding: 20px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #C9252C;
+    color: #C9252C;
+}
+
+.warining_complete {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+@media screen and (max-width:767px) {
+
+    .u-pcDb {
+        display: none;
+    }
+    
+    .u-spDb {
+        display: block;
+    }
+
+    .step {
+        margin: 20px auto 0;
+        gap: 1px;
+        max-width: 327px;
+    }
+
+    .step__item {
+        width: calc(100% / 3);
+        height: 40px;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .step__item::after {
+        right: -5px;
+        width: 5px;
+        height: 40px;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="40" viewBox="0 0 5 40"><path id="Polygon_1" data-name="Polygon 1" d="M20,0,40,5H0Z" transform="translate(5) rotate(90)" fill="%23e6e7e8"/></svg>');
+    }
+
+    .step__item.active::after {
+        right: -5px;
+        width: 5px;
+        height: 40px;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="40" viewBox="0 0 5 40"><path id="Polygon_1" data-name="Polygon 1" d="M20,0,40,5H0Z" transform="translate(5) rotate(90)" fill="%2325aae1"/></svg>');
+    }
+
+    .step__item:nth-of-type(n+2) {
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="107.001" height="40" viewBox="0 0 107.001 40"><path id="Subtraction_2" data-name="Subtraction 2" d="M107.417,40H.415v-.005L5.417,20l-5-20h107V40Z" transform="translate(-0.415 0)" fill="%23e6e7e8"/></svg>');
+    }
+    
+    .step__item.active:nth-of-type(n+2) {
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="107.001" height="40" viewBox="0 0 107.001 40"><path id="Subtraction_2" data-name="Subtraction 2" d="M107.417,40H.415v-.005L5.417,20l-5-20h107V40Z" transform="translate(-0.415 0)" fill="%2325AAE1"/></svg>');
+    }
+
+    .registerForm {
+        margin-bottom: 130px;
+    }
+
+    .registerForm__txt {
+        margin: 32px auto 0;
+    }
+
+    .registerForm__content {
+        margin-top: 32px;
+        padding: 20px 16px;
+    }
+
+    .registerForm__contentFlex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .registerForm__contentHd {
+        width: auto;
+        gap: 8px;
+        padding: 0;
+    }
+
+    .registerForm__contentInput {
+        width: 100%;
+    }
+
+    .registerForm__contentInputFlex {
+        gap: 11px;
+    }
+
+    .registerForm__contentInput input {
+        padding: 12px;
+    }
+
+    .registerForm__contentInputTxt {
+        text-indent: -17px;
+        padding-left: 17px;
+    }
+
+    .registerForm__contentFlexBtnFlex {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .complete__header01 {
+        margin-top: 32px;
+        font-size: 24px;
+    }
+
+    .complete__txt {
+        margin-top: 16px;
+    }
+
+    .complete__block {
+        margin-top: 32px;
+        padding: 20px 16px;
+    }
+
+    .complete__blockHd {
+        line-height: 1.6;
+    }
+
+    .complete__blockTxt {
+        margin-top: 8px;
+    }
+
+    .warining_complete {
+        margin: 10px 0 130px;
+    }
+
+    .registerForm__txtWarningConfirm {
+        margin: 32px auto 0;
+        padding: 16px;
+        line-height: 1.7;
+    }
+}
